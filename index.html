@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Dublin Dental Practice offers professional dental services at an affordable price. We have 4 clinics in the greater Dublin area for your convenience.">
         <link rel="stylesheet" type="text/css" href="styles/modern-normalize.css">
-        <!-- <link rel="stylesheet" type="text/css" href="styles/grid.css">    -->
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" type="text/css" href="styles/queries.css">      
         <link href="https://fonts.googleapis.com/css?family=Lato:400,400i&display=swap" rel="stylesheet">
@@ -55,10 +54,11 @@
                 <h3 class="hero__sub-head-line">Creating beautiful smiles since 1998. Visit our state of the art facility today!</h3>
                 <a class="hero__button hero__button--animate" href="#contact">Book Your Appointment</a>
                 <a class="hero__button--ghost hero__button--animate" href="#services">Explore Our Services</a>
-            </div>    
+            </div>   
+            <a class="scroll-arrow" href="#features">&darr;</a> 
         </header> 
         
-        <section class="features">
+        <section class="features" id="features">
             <div class="row">
                 <h2>Expert Dental Service  &mdash; Placeholder</h2>
                 <p class="features__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat sed nibh dapibus egestas. Sed pellentesque enim a augue fringilla, at porta mauriset.</p>
@@ -402,27 +402,54 @@
                 </div>
             </div>
         </section>
-    
 
+        <section class="popup" id="popup">
+            <div class="popup__box">
+                <div class="popup__left-column">   
+                    <h2> Got dental problems?</h2>
+                    <h3>We can put a smile on your face!</h3>
+                    <p class="popup__paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aliquam laudantium, libero magnam dolorem excepturi nesciunt recusandae exercitationem voluptates repudiandae nam ducimus, fugit ab nisi distinctio possimus aspernatur vitae itaque et, nulla perspiciatis! Unde reprehenderit, alias eos rerum ipsum fuga adipisci, labore recusandae dolore eveniet voluptatibus obcaecati ad numquam inventore possimus iste voluptas earum velit, sed odit. Velit optio molestiae animi repudiandae voluptatum laudantium eaque iusto, minus nam corrupti consequatur ratione, deleniti dolore repellat eligendi suscipit aperiam perferendis eius vitae similique debitis exercitationem qui dignissimos?
+                    </p>
+                    <a href="#contact" class="hero__button hvr-pulse">Get in touch</a>                 
+                </div>
+                <div class="popup__right-column">
+                    <a href="#section-treatments" class="popup__exit">&times;</a>
+                </div>
+            </div>
+        </section>
+    
         <section class="section-testimonials">
             <div class="row">
                 <h2>See what our happy patients have to say</h2>
-                <div class="row">
-                    <div class="col span-1-of-3 box">
-                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat sed nibh dapibus egestas sedenta mari.</blockquote>
+                <div class="row slideshow__container">
+                    <div class="slideshow__slide">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi consequuntur tempora praesentium unde ullam ea optio blanditiis placeat impedit! In debitis culpa, quia possimus deleniti, nostrum totam cumque aut quidem delectus dolores distinctio.</blockquote>
                         <cite class="section-testimonials__person"><img src="./styles/images/user1.jpg" alt="30 year old white man smiling"> -Rory Sinnott</cite>
                     </div>
-                    <div class="col span-1-of-3 box">
-                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat sed nibh dapibus egestas sedenta mari.</blockquote>
+                    <div class="slideshow__slide">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo placeat ipsum, voluptatem nihil, blanditiis alias nemo sed error consectetur accusamus laudantium nisi nostrum totam. Sapiente exercitationem deleniti vero facere harum sint ducimus natus minima!</blockquote>
                         <cite class="section-testimonials__person"><img src="./styles/images/user2.jpg" alt="30 year old white woman smiling"> -Mary Doyle</cite>
                     </div>
-                    <div class="col span-1-of-3 box">
-                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat sed nibh dapibus egestas sedenta mari.</blockquote>
+                    <div class="slideshow__slide">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptas? Amet, iusto voluptatum? Minus maiores obcaecati numquam voluptatum laborum quidem culpa commodi quam omnis veritatis, excepturi illum hic distinctio. Facilis quae delectus alias!</blockquote>
                         <cite class="section-testimonials__person"><img src="./styles/images/user3.jpg" alt="25 year old white man smiling"> -Philip Murphy</cite>
                     </div>
+                    <div class="row slideshow__controls">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                      
+                  
                 </div>    
             </div>
         </section>
+        
 
 
 
@@ -432,76 +459,40 @@
             </div>
             <div class="row">
                 <form method="post" action="#" class="contact-form"> 
-                    <div class="row contact-form__rows">
-                        <div class="col span-1-of-2">
-                            <label for="name">Name*</label>
-                        </div>
-                        <div class="col span-1-of-2 js-input">
-                            <input type="text" name="name" id="name" placeholder="Your name">
-                            <p class="error-message">Error</p>
-                        </div>
+                    <label for="name">Name*</label>
+                    <div class="js-input">
+                        <input type="text" name="name" id="name" placeholder="Your name">
+                        <p class="error-message">Error</p>
                     </div>
 
-                    <div class="row contact-form__rows">
-                        <div class="col span-1-of-2">
-                            <label for="email">Email*</label>
-                        </div>
-                        <div class="col span-1-of-2 js-input">
-                            <input type="email" name="email" id="email" placeholder="Your email">
-                            <p class="error-message">Error</p>
-                        </div>
+                    <label for="email">Email*</label>
+                    <div class="js-input">
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                        <p class="error-message">Error</p>
                     </div>
 
-                    <div class="row contact-form__rows">
-                        <div class="col span-1-of-2">
-                            <label for="which-clinic">Your closest clinic?</label>
-                        </div>
-                        <div class="col span-1-of-2">
-                            <select name="which-clinic" id="which-clinic">
-                                <option value="rathmines" selected>Rathmines</option>
-                                <option value="swords">Swords</option>
-                                <option value="tallaght">Tallaght</option>
-                                <option value="blackrock">Blackrock</option>
-                            </select>
-                        </div>
+                    <label for="which-clinic">Your closest clinic?</label>
+                    <select name="which-clinic" id="which-clinic">
+                        <option value="rathmines" selected>Rathmines</option>
+                        <option value="swords">Swords</option>
+                        <option value="tallaght">Tallaght</option>
+                        <option value="blackrock">Blackrock</option>
+                    </select>
+
+                    <label for="date">Appointment Date</label>
+                    <input type="date" name="date" id="date">
+
+                    <label>How can we help you?</label>
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    
+                    <label class="nbsp">&nbsp;</label>
+                    <div>
+                        <input type="checkbox" name="newsletter" id="newsletter" checked> 
+                        <span class="contact-form__newsletter">  I would like to receive special offers</span>    
                     </div>
 
-
-                    <div class="row contact-form__rows">
-                        <div class="col span-1-of-2">
-                            <label for="date">Appointment Date</label>
-                        </div>
-                        <div class="col span-1-of-2">
-                            <input type="date" name="date" id="date">
-                        </div>
-                    </div>
-
-                    <div class="row text-area">
-                        <div class="col span-1-of-2">
-                            <label>How can we help you?</label>
-                        </div>
-                        <div class="col span-1-of-2">
-                            <textarea name="message" placeholder="Your message"></textarea>
-                        </div>
-                    </div>  
-
-                    <div class="row">
-                        <div class="col span-1-of-2">
-                            <label class="nbsp">&nbsp;</label>
-                        </div>
-                        <div class="col span-1-of-2">
-                            <input type="checkbox" name="newsletter" id="newsletter" checked> <span class="contact-form__newsletter">  I would like to receive special offers</span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col span-1-of-2">
-                            <label class="nbsp">&nbsp;</label>
-                        </div>
-                        <div class="col span-1-of-2">
-                            <input type="submit" value="Send message" class="submit hvr-pulse">
-                        </div>
-                    </div>  
+                    <label class="nbsp">&nbsp;</label>
+                    <input type="submit" value="Send message" class="submit hvr-pulse">
                 </form>
             </div>    
         </section>
@@ -552,27 +543,6 @@
             </div>
 
         </footer>
-
-        <div class="popup" id="popup">
-            <div class="popup__box">
-                <div class="popup__left-column">   
-                    <h2> Got dental problems?</h2>
-                    <h3>We can put a smile on your face!</h3>
-                    <p class="popup__paragraph">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aliquam laudantium, libero magnam dolorem excepturi nesciunt recusandae exercitationem voluptates repudiandae nam ducimus, fugit ab nisi distinctio possimus aspernatur vitae itaque et, nulla perspiciatis! Unde reprehenderit, alias eos rerum ipsum fuga adipisci, labore recusandae dolore eveniet voluptatibus obcaecati ad numquam inventore possimus iste voluptas earum velit, sed odit. Velit optio molestiae animi repudiandae voluptatum laudantium eaque iusto, minus nam corrupti consequatur ratione, deleniti dolore repellat eligendi suscipit aperiam perferendis eius vitae similique debitis exercitationem qui dignissimos?
-                    </p>
-                    <a href="#contact" class="hero__button hvr-pulse">Get in touch</a>                 
-                </div>
-                <div class="popup__right-column">
-                    <a href="#section-treatments" class="popup__exit">&times;</a>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
                   
 
         <script src="js/main.js"></script>  
