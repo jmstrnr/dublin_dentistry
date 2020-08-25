@@ -1,22 +1,63 @@
+/* ---App Popup Logic---*/
+
+const close = document.querySelector('.js-close');
+const open = document.querySelector('.js-open');
+const appPopup = document.querySelector('.js-app-popup');
+
+// Show app popup
+open.addEventListener('click', () => appPopup.classList.add('show-popup'));
+
+// Hide app popup
+close.addEventListener('click', () => appPopup.classList.remove('show-popup'));
+
+// Hide app popup on  click outside popup container
+window.addEventListener('click', (e) =>
+  e.target === appPopup ? appPopup.classList.remove('show-popup') : false
+);
+
+/*---App Steps Slide-in Logic---*/
+
+const appSteps = document.querySelectorAll('.app-steps');
+
+const visibleOnScreen = (element) => {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
+
+const runSlideIn = () => {
+  appSteps.forEach((appStep) => {
+    if (visibleOnScreen(appStep)) {
+      appStep.classList.add('show');
+    }
+  });
+};
+
+window.addEventListener('load', runSlideIn);
+window.addEventListener('resize', runSlideIn);
+window.addEventListener('scroll', runSlideIn);
+
 /* ---Testimonial Slideshow Logic---*/
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// eslint-disable-next-line no-unused-vars -- Used in index.html
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// eslint-disable-next-line no-unused-vars -- Used in index.html
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let i;
-  const slides = document.getElementsByClassName('slideshow__slide');
-  const dots = document.getElementsByClassName('dot');
+  const slides = document.querySelectorAll('.slideshow__slide');
+  const dots = document.querySelectorAll('.dot');
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -24,14 +65,54 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+    slides[i].classList.remove('show-slide');
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(' active', '');
   }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
+  slides[slideIndex - 1].classList.add('show-slide');
+  dots[slideIndex - 1].classList.add('active');
 }
+
+// Event listeners for prev/next slide
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+const prevSlide = function () {
+  plusSlides(-1);
+};
+
+const nextSlide = function () {
+  plusSlides(1);
+};
+
+prev.addEventListener('click', prevSlide);
+
+next.addEventListener('click', nextSlide);
+
+// Autoplay slides on interval
+const autoplaySlides = () => {
+  setInterval(nextSlide, 5000);
+};
+
+autoplaySlides();
+
+// Event listeners for individual dots
+const slide1 = document.querySelector('.slide--1');
+const slide2 = document.querySelector('.slide--2');
+const slide3 = document.querySelector('.slide--3');
+
+slide1.addEventListener('click', () => {
+  currentSlide(1);
+});
+
+slide2.addEventListener('click', () => {
+  currentSlide(2);
+});
+
+slide3.addEventListener('click', () => {
+  currentSlide(3);
+});
 
 /* ---Contact Form Validation---*/
 

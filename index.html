@@ -1,552 +1,770 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Dublin Dental Practice offers professional dental services at an affordable price. We have 4 clinics in the greater Dublin area for your convenience.">
-        <link rel="stylesheet" type="text/css" href="styles/modern-normalize.css">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <link rel="stylesheet" type="text/css" href="styles/queries.css">      
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i&display=swap" rel="stylesheet">
-        <meta charset="utf-8">
-        <link rel="apple-touch-icon" sizes="180x180" href="./styles/images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./styles/images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./styles/images/favicon-16x16.png">
-        <link rel="manifest" href="./styles/images/site.webmanifest">
-        <link rel="mask-icon" href="./styles/images/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="./styles/images/favicon.ico">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="./styles/images/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        <title>Dublin Dentistry</title>
-    </head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dublin Dental Practice offers professional dental services at an affordable price. We have 4 clinics in the greater Dublin area for your convenience."
+    />
+    <link rel="stylesheet" type="text/css" href="styles/modern-normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./styles/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./styles/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./styles/images/favicon-16x16.png" />
+    <link rel="manifest" href="./styles/images/site.webmanifest" />
+    <link rel="mask-icon" href="./styles/images/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./styles/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="./styles/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Dublin Dentistry</title>
+  </head>
 
+  <body>
+    <header id="home">
+      <div class="row">
+        <img class="logo" alt="dental tooth logo" src="./styles/images/greenlogo.png" />
 
+        <div>
+          <input type="checkbox" class="navigation__checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="nav-toggle__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
 
+          <div class="navigation__overlay">&nbsp;</div>
 
-    <body>
-        <header id="home">
-                <div class="row">
-                    <img class="logo" alt="dental tooth logo" src="./styles/images/greenlogo.png">
+          <nav class="navigation__menu">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#home" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#services" class="navigation__link">Services</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#locations" class="navigation__link">Locations</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#contact" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-                    <div>
-                        <input type="checkbox" class="navigation__checkbox" id="menu-toggle">   
-                        <label for="menu-toggle" class="nav-toggle__button">
-                            <span class="navigation__icon">&nbsp;</span>
-                        </label>
-            
-                        <div class="navigation__overlay">&nbsp;</div>
-            
-                        <nav class="navigation__menu">
-                            <ul class="navigation__list">
-                                <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
-                                <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
-                                <li class="navigation__item"><a href="#locations" class="navigation__link">Locations</a></li>
-                                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>         
-                </div> 
+      <div class="hero__text-box">
+        <h1 class="hero__head-line">Dublin Dental Practice</h1>
+        <h3 class="hero__sub-head-line">
+          Creating beautiful smiles since 1998. Visit our state of the art facility today!
+        </h3>
+        <a class="hero__button hero__button--animate" href="#contact">Book Your Appointment</a>
+        <a class="hero__button--ghost hero__button--animate" href="#services"
+          >Explore Our Services</a
+        >
+      </div>
+      <a class="scroll-arrow" href="#features">&darr;</a>
+    </header>
 
-                    
-            <div class="hero__text-box">
-                <h1 class="hero__head-line">Dublin Dental Practice</h1>
-                <h3 class="hero__sub-head-line">Creating beautiful smiles since 1998. Visit our state of the art facility today!</h3>
-                <a class="hero__button hero__button--animate" href="#contact">Book Your Appointment</a>
-                <a class="hero__button--ghost hero__button--animate" href="#services">Explore Our Services</a>
-            </div>   
-            <a class="scroll-arrow" href="#features">&darr;</a> 
-        </header> 
-        
-        <section class="features" id="features">
-            <div class="row">
-                <h2>Expert Dental Service  &mdash; Placeholder</h2>
-                <p class="features__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat sed nibh dapibus egestas. Sed pellentesque enim a augue fringilla, at porta mauriset.</p>
-            </div>
+    <section class="features" id="features">
+      <div class="row">
+        <h2>Expert Dental Service &mdash; Placeholder</h2>
+        <p class="features__copy">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat sed nibh
+          dapibus egestas. Sed pellentesque enim a augue fringilla, at porta mauriset.
+        </p>
+      </div>
 
-            <div class="row features__flex">
-                <div class="box features-box">
-                    <svg class="icon--big">
-                        <use href="./styles/icons/symbol-defs.svg#icon-bubbles3"></use>
-                    </svg>
-                    <h3 class="features__h3">Free Initial Consultation</h3>
-                    <p class="features__para">Whether you are looking for braces, a filling or ongoing checkups, we offer a free consultation to new patients.</p>
-                </div>
-                <div class="box features-box">
-                    <svg class="icon--big">
-                        <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
-                    </svg>
-                    <h3 class="features__h3">4 Convenient Locations</h3>
-                    <p class="features__para">We are easily accessible by public transport and have ample parking. You have multiple clinics to choose from.</p>
-                </div>
-                <div class="box features-box">
-                    <svg class="icon--big">
-                        <use href="./styles/icons/symbol-defs.svg#icon-trophy"></use>
-                    </svg>
-                    <h3 class="features__h3">Experienced Dental Specialist</h3>
-                    <p class="features__para">Dr Example has spent x years as an orthodontist, and engages in yearly ongoing education to stay sharp.</p>
-                </div>
-                <div class="box features-box">
-                    <svg class="icon--big">
-                        <use href="./styles/icons/symbol-defs.svg#icon-happy"></use>
-                    </svg>
-                    <h3 class="features__h3">Friendly and Professional</h3>
-                    <p class="features__para">We cater to all ages, including children and the elderly. For those who are anxious, we are excellent at calming nerves.</p>
-                </div>
-                
-            </div>
-        </section>
+      <div class="row features__flex">
+        <div class="box features-box">
+          <svg class="icon--big">
+            <use href="./styles/icons/symbol-defs.svg#icon-bubbles3"></use>
+          </svg>
+          <h3 class="features__h3">Free Initial Consultation</h3>
+          <p class="features__para">
+            Whether you are looking for braces, a filling or ongoing checkups, we offer a free
+            consultation to new patients.
+          </p>
+        </div>
+        <div class="box features-box">
+          <svg class="icon--big">
+            <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
+          </svg>
+          <h3 class="features__h3">4 Convenient Locations</h3>
+          <p class="features__para">
+            We are easily accessible by public transport and have ample parking. You have multiple
+            clinics to choose from.
+          </p>
+        </div>
+        <div class="box features-box">
+          <svg class="icon--big">
+            <use href="./styles/icons/symbol-defs.svg#icon-trophy"></use>
+          </svg>
+          <h3 class="features__h3">Experienced Dental Specialist</h3>
+          <p class="features__para">
+            Dr Example has spent x years as an orthodontist, and engages in yearly ongoing education
+            to stay sharp.
+          </p>
+        </div>
+        <div class="box features-box">
+          <svg class="icon--big">
+            <use href="./styles/icons/symbol-defs.svg#icon-happy"></use>
+          </svg>
+          <h3 class="features__h3">Friendly and Professional</h3>
+          <p class="features__para">
+            We cater to all ages, including children and the elderly. For those who are anxious, we
+            are excellent at calming nerves.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section class="section-price" id="services">
-            <div class="row">
-                <h2>Our Invisalign Offers</h2>
-                    <p class="price__intro">Many people are concerned by the thought of obvious braces having an impact on their social life. Clear aligners like Invisalign are very subtle and inobtrusive, making them the perfect solution.</p>       
-            </div>
-            <div class="row box price__flex">
-                <div class="price-box">
-                    <div class="price">
-                        <h3>Invisalign</h3>
-                        <p class="price__plan">€4,500</p>
-                        <p class="price__plan--month">Or 12 monthly payments of €375</p>
-                    </div>
-                    <div class="prices-details">
-                        <ul class="price-info">
-                            <li class="price-info__li">
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-star-full"></use>
-                                </svg>
-                                For both top and bottom teeth</li>
-                            <li class="price-info__li">                                  
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-user-check"></use>
-                                </svg>
-                                Free consultation and assessment</li>
-                            <li class="price-info__li">                                    
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-calendar"></use>
-                                </svg>
-                                Monthly progress checkups</li>
-                            <li class="price-info__li">                                    
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-coin-euro"></use>
-                                </svg>
-                                Treatment is tax deductible</li>
-                        </ul>
-                    </div>
-                    <div class="consultation">
-                        <a class="consultation__btn consultation__btn--main hvr-radial-out" href="#contact">Book Your Free Consultation</a>
-                    </div>
-                </div>
-                <div class="price-box">
-                    <div class="price">
-                        <h3>Invisalign (Lite)</h3>
-                        <p class="price__plan">€3,000</p>
-                        <p class="price__plan--month">Or 12 monthly payments of €250</p>
-                    </div>
-                    <div class="prices-details">
-                        <ul class="price-info">
-                            <li class="price-info__li">                                    
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-star-half"></use>
-                                </svg>
-                                For top or bottom teeth</li>
-                            <li class="price-info__li">                                    
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-user-check"></use>
-                                </svg>
-                                Free consultation and assessment</li>
-                            <li class="price-info__li">                                    
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-calendar"></use>
-                                </svg>
-                                Monthly progress checkups</li>
-                            <li class="price-info__li">                                    
-                                <svg class="price-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-coin-euro"></use>
-                                </svg>
-                                Treatment is tax deductible</li>
-                        </ul>
-                    </div>
-                    <div class="consultation">
-                        <a class="consultation__btn consultation__btn--ghost hvr-radial-out" href="#contact">Book Your Free Consultation</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="section-price" id="services">
+      <div class="row">
+        <h2>Our Invisalign Offers</h2>
+        <p class="price__intro">
+          Many people are concerned by the thought of obvious braces having an impact on their
+          social life. Clear aligners like Invisalign are very subtle and inobtrusive, making them
+          the perfect solution.
+        </p>
+      </div>
+      <div class="row box price__flex">
+        <div class="price-box">
+          <div class="price">
+            <h3>Invisalign</h3>
+            <p class="price__plan">€4,500</p>
+            <p class="price__plan--month">Or 12 monthly payments of €375</p>
+          </div>
+          <div class="prices-details">
+            <ul class="price-info">
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-star-full"></use>
+                </svg>
+                <span>For both top and bottom teeth</span>
+              </li>
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-user-check"></use>
+                </svg>
+                <span>Free consultation and assessment</span>
+              </li>
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-calendar"></use>
+                </svg>
+                <span>Monthly progress checkups</span>
+              </li>
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-coin-euro"></use>
+                </svg>
+                <span>Treatment is tax deductible</span>
+              </li>
+            </ul>
+          </div>
+          <div class="consultation">
+            <a class="consultation__btn consultation__btn--main hvr-radial-out" href="#contact"
+              >Book Your Free Consultation</a
+            >
+          </div>
+        </div>
+        <div class="price-box">
+          <div class="price">
+            <h3>Invisalign (Lite)</h3>
+            <p class="price__plan">€3,000</p>
+            <p class="price__plan--month">Or 12 monthly payments of €250</p>
+          </div>
+          <div class="prices-details">
+            <ul class="price-info">
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-star-half"></use>
+                </svg>
+                <span>For top or bottom teeth</span>
+              </li>
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-user-check"></use>
+                </svg>
+                <span>Free consultation and assessment</span>
+              </li>
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-calendar"></use>
+                </svg>
+                <span>Monthly progress checkups</span>
+              </li>
+              <li class="price-info__li">
+                <svg class="price-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-coin-euro"></use>
+                </svg>
+                <span>Treatment is tax deductible</span>
+              </li>
+            </ul>
+          </div>
+          <div class="consultation">
+            <a class="consultation__btn consultation__btn--ghost hvr-radial-out" href="#contact">
+              Book Your Free Consultation
+            </a>
+          </div>
+        </div>
+      </div>
 
-
-        </section>
-        <section class="app">
+      <div class="faq">
         <div class="row">
-            <h2 class="app__intro">Teach your child to brush  &mdash; download our app today!</h2>
-            <div class="row app-box">
-                <div class="app-box__left">
-                    <img src="./styles/images/app.jpg" alt="Teeth brushing app" class="app__photo">
-                </div>
-                <div class="app-box__right">
-                    <div class="app-steps">
-                        <div>&rArr;</div>
-                        <p>Download and install the app on your phone, via the Apple app store or the Google Play store.</p>
-                    </div>
-                    <div class="app-steps">
-                        <div>&rArr;	</div>
-                        <p>The app will instruct your child on the correct brushing procedure, and on how long they should spend brushing.</p>
-                    </div>
-                    <div class="app-steps">
-                        <div>&rArr;</div>
-                        <p>Every time they follow the apps instructions, they earn points and gold stars, building good dental habits.</p>
-                    </div>
-                    <div class="row app__download">
-                        <a href="https://www.apple.com/ios/app-store/" class="app__button"><img src="./styles/images/download-app.svg" alt="Apple app store download button"></a>
-                        <a href="https://play.google.com/store?hl=en_US" class="app__button"><img src="./styles/images/download-app-android.png" alt="Google Play store download button"></a>
-                    </div>
-                </div>
+          <h3>Frequently Asked Questions</h3>
+          <div class="tabs">
+            <div class="tab">
+              <input type="checkbox" class="faq__input" id="faq1" />
+              <label class="tab-label" for="faq1">What is the treatment process?</label>
+              <div class="tab-content">
+                <p>
+                  Invisalign treatment starts with a consultation with an Invisalign-trained doctor.
+                  Your Invisalign Doctor will evaluate your smile and then map out a precise,
+                  customised digital treatment plan that showcases the step-by-step transformation
+                  of your smile.
+                </p>
+                <p>
+                  Once you approve your plan, your unique aligners will be created. You will wear
+                  each set of aligners for 20 to 22 hours a day, changing to a new set of aligners
+                  every 1 to 2 weeks, as directed by your Invisalign Doctor. Each set of aligners
+                  will gently and gradually shift your teeth into place, according to your treatment
+                  plan, towards your beautiful new smile.
+                </p>
+              </div>
             </div>
-        </div> 
-        </section>
+            <div class="tab">
+              <input type="checkbox" class="faq__input" id="faq2" />
+              <label class="tab-label" for="faq2"
+                >How is Invisalign treatment different than other teeth-straightening
+                options?</label
+              >
+              <div class="tab-content">
+                <p>
+                  Invisalign treatment is the most advanced clear aligner system in the world,
+                  backed by more than two decades of innovation.
+                </p>
+                <p>
+                  Unlike braces, Invisalign clear aligners are removable and virtually invisible.
+                  There are no wires and brackets, so you don’t need to change the way you brush and
+                  floss. And, you can continue to eat all your favourite foods.
+                </p>
+                <p>
+                  And no other clear aligner is made from SmartTrack material. This advanced
+                  technology helps move your teeth more predictably and can help you get the smile
+                  you want up to 50% faster.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" class="faq__input" id="faq3" />
+              <label class="tab-label" for="faq3">What’s the best way to clean my aligners?</label>
+              <div class="tab-content">
+                <p>
+                  The best way to clean your aligners is by brushing and rinsing them in lukewarm
+                  water and using the Invisalign Cleaning Crystals or special cleaning tablets. It’s
+                  important that you brush your teeth after each meal before re-inserting your
+                  aligners to maintain good oral hygiene.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="checkbox" class="faq__input" id="faq4" />
+              <label class="tab-label" for="faq4"
+                >What if I lose or break an aligner. What should I do?</label
+              >
+              <div class="tab-content">
+                <p>
+                  If you lose or break an Invisalign aligner, immediately let your Invisalign Doctor
+                  know. Your Invisalign Doctor will work with you to ensure you stay on-track with
+                  your treatment plan, which may involve wearing a previous set of aligners, your
+                  next set of aligners, or ordering replacements aligners.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="new-loc" id="locations">
-            <div class="row">
-                <h2>New Blackrock Location</h2>
-                <p class="new-loc__para">We have just opened a new branch in Blackrock, so it has never been easier to reach us.</p>
+    <section class="app" id="app">
+      <div class="row">
+        <h2 class="app__intro">
+          Teach your child to brush &mdash; download our app today!
+        </h2>
+        <div class="row app-box">
+          <div class="app-box__left">
+            <img src="./styles/images/app.jpg" alt="Teeth brushing app" class="app__photo" />
+          </div>
+          <div class="app-box__right">
+            <div class="app-steps">
+              <div>&rArr;</div>
+              <p>
+                Use the button below to signup for the app. After registration, you can download the
+                app via Google Play or the Apple App Store.
+              </p>
+            </div>
+            <div class="app-steps">
+              <div>&rArr;</div>
+              <p>
+                The app will instruct your child on the correct brushing procedure, and on how long
+                they should spend brushing.
+              </p>
+            </div>
+            <div class="app-steps">
+              <div>&rArr;</div>
+              <p>
+                Every time they follow the apps instructions, they earn points and gold stars,
+                building good dental habits.
+              </p>
+            </div>
+            <div class="row app__download">
+              <button class="app__button hvr-pulse js-open">
+                Download App
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="app-popup__container js-app-popup">
+      <div class="app-popup">
+        <a href="#app" class="app-popup__close-btn js-close">&times;</a>
+        <div class="app-popup__header">
+          <h3>Download Our App</h3>
+        </div>
+        <div class="app-popup__content">
+          <p>
+            Submit your name and email and you will be sent a link to download our app.
+          </p>
+          <form class="app-popup__form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter Name" class="app-popup__form-input" />
             </div>
             <div>
-                <ul class="new-loc__images clearfix">
-                    <li>
-                        <figure class="blackrock-photo">
-                            <img src="./styles/images/newoffice1-1280.jpg" alt="Dentist practice operating chair">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="blackrock-photo">
-                            <img src="./styles/images/newoffice2-1280.jpg" alt="Dentist chair and tools">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="blackrock-photo">
-                            <img src="./styles/images/newoffice3-1280.jpg" alt="Dental practice chair and tools top view">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="blackrock-photo">
-                            <img src="./styles/images/newoffice4-1280.jpg" alt="Dental surgery block equipment">
-                        </figure>
-                    </li>
-                </ul>
-
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="app-popup__form-input"
+              />
             </div>
-        </section>
+            <input type="submit" value="Submit" class="app-popup__submit-btn" />
+          </form>
+        </div>
+      </div>
+    </section>
 
+    <section class="new-loc" id="locations">
+      <div class="row">
+        <h2>New Blackrock Location</h2>
+        <p class="new-loc__para">
+          We have just opened a new branch in Blackrock, so it has never been easier to reach us.
+        </p>
+      </div>
+      <div>
+        <ul class="new-loc__images clearfix">
+          <li>
+            <figure class="blackrock-photo">
+              <img
+                src="./styles/images/newoffice1-1280.jpg"
+                alt="Dentist practice operating chair"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure class="blackrock-photo">
+              <img src="./styles/images/newoffice2-1280.jpg" alt="Dentist chair and tools" />
+            </figure>
+          </li>
+          <li>
+            <figure class="blackrock-photo">
+              <img
+                src="./styles/images/newoffice3-1280.jpg"
+                alt="Dental practice chair and tools top view"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure class="blackrock-photo">
+              <img src="./styles/images/newoffice4-1280.jpg" alt="Dental surgery block equipment" />
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="section-locations">
-            <div class="row">
-                <h2>We currently have clinics in these locations!</h2>
-                <div class="row locations__flex">
-                    <div class="box locations">
-                        <img src="./styles/images/rathmines.jpg" alt="Rathmines town hall" class="locations__photo">
-                        <h3>Rathmines</h3>
-                        <ul class="contact-info">
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
-                                </svg>Example Street A
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
-                                </svg>
-                                <a href="tel:+123-456-7890">123-456-7890</a>
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
-                                </svg>
-                                <a href="mailto:rathmines@dental.com">rathmines@dental.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box locations">
-                        <img src="./styles/images/swords.jpg" alt="Swords town hall" class="locations__photo">
-                        <h3>Swords</h3>
-                        <ul class="contact-info">
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
-                                </svg>Example Street B
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
-                                </svg>
-                                <a href="tel:+213-456-7890">213-456-7890</a>
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
-                                </svg>
-                                <a href="mailto:swords@dental.com">swords@dental.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box locations">
-                        <img src="./styles/images/tallaght.png" alt="Tallaght main street" class="locations__photo">
-                        <h3>Tallaght</h3>
-                        <ul class="contact-info">
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
-                                </svg>Example Street C
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
-                                </svg>
-                                <a href="tel:+231-456-7890">231-456-7890</a>
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
-                                </svg>
-                                <a href="mailto:tallaght@dental.com">tallaght@dental.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box locations">
-                        <img src="./styles/images/blackrock.jpg" alt="Blackrock shopping centre" class="locations__photo">
-                        <h3>Blackrock</h3>
-                        <ul class="contact-info">
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
-                                </svg>Example Street D
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
-                                </svg>
-                                <a href="tel:+312-456-7890">312-456-7890</a>
-                            </li>
-                            <li>
-                                <svg class="contact-info__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
-                                </svg>
-                                <a href="mailto:blackrock@dental.com">blackrock@dental.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>   
+    <section class="section-locations">
+      <div class="row">
+        <h2>We currently have clinics in these locations!</h2>
+        <div class="row locations__flex">
+          <div class="box locations">
+            <img
+              src="./styles/images/rathmines.jpg"
+              alt="Rathmines town hall"
+              class="locations__photo"
+            />
+            <h3>Rathmines</h3>
+            <ul class="contact-info">
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
+                </svg>
+                <span>Example Street A</span>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+123-456-7890">123-456-7890</a>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
+                </svg>
+                <a href="mailto:rathmines@dental.com">rathmines@dental.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="box locations">
+            <img src="./styles/images/swords.jpg" alt="Swords town hall" class="locations__photo" />
+            <h3>Swords</h3>
+            <ul class="contact-info">
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
+                </svg>
+                <span>Example Street B</span>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+213-456-7890">213-456-7890</a>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
+                </svg>
+                <a href="mailto:swords@dental.com">swords@dental.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="box locations">
+            <img
+              src="./styles/images/tallaght.png"
+              alt="Tallaght main street"
+              class="locations__photo"
+            />
+            <h3>Tallaght</h3>
+            <ul class="contact-info">
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
+                </svg>
+                <span>Example Street C</span>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+231-456-7890">231-456-7890</a>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
+                </svg>
+                <a href="mailto:tallaght@dental.com">tallaght@dental.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="box locations">
+            <img
+              src="./styles/images/blackrock.jpg"
+              alt="Blackrock shopping centre"
+              class="locations__photo"
+            />
+            <h3>Blackrock</h3>
+            <ul class="contact-info">
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-location2"></use>
+                </svg>
+                <span>Example Street D</span>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+312-456-7890">312-456-7890</a>
+              </li>
+              <li>
+                <svg class="contact-info__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-mail4"></use>
+                </svg>
+                <a href="mailto:blackrock@dental.com">blackrock@dental.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-treatments" id="section-treatments">
+      <div class="row">
+        <h2>View Our Most Popular Treatments</h2>
+      </div>
+
+      <div class="row treatments__flex">
+        <div class="box treatment__box">
+          <div class="treatment">
+            <div class="treatment__card treatment__card--front">
+              <div class="card__photo card__photo--1">
+                &nbsp;
+              </div>
+              <h4 class="card-front__text">Root Canal Treatment</h4>
             </div>
-        </section>
-
-
-        <section class="section-treatments" id="section-treatments">
-            <div class="row">
-                <h2>View Our Most Popular Treatments</h2>
+            <div class="treatment__card treatment__card--back card__back--gradient">
+              <div class="card__back--box">
+                <p>
+                  We can treat infections at the centre of a tooth and relieve your pain
+                </p>
+                <a href="#popup" class="card__back--button hvr-outline-out">
+                  LEARN MORE
+                </a>
+              </div>
             </div>
-
-            <div class="row treatments__flex">
-                <div class="box treatment__box">
-                    <div class="treatment">
-                        <div class="treatment__card treatment__card--front">
-                             <div class="card__photo card__photo--1">
-                                 &nbsp;
-                             </div>
-                             <h4 class="card-front__text">Root Canal Treatment</h4>
-                        </div>
-                        <div class="treatment__card treatment__card--back card__back--gradient">
-                             <div class="card__back--box">
-                                 <p>We can treat infections at the centre of a tooth and relieve your pain</p>
-                                 <a href="#popup" class="card__back--button hvr-outline-out">LEARN MORE</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box treatment__box">
-                    <div class="treatment">
-                        <div class="treatment__card treatment__card--front">
-                             <div class="card__photo card__photo--2">
-                                 &nbsp;
-                             </div>
-                             <h4 class="card-front__text">Tooth Extraction</h4>
-                        </div>
-                        <div class="treatment__card treatment__card--back card__back--gradient">
-                             <div class="card__back--box">
-                                 <p>We can extract any teeth that are too damaged or loose to be saved</p>
-                                 <a href="#popup" class="card__back--button hvr-outline-out">LEARN MORE</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box treatment__box">
-                    <div class="treatment">
-                        <div class="treatment__card treatment__card--front">
-                             <div class="card__photo card__photo--3">
-                                 &nbsp;
-                             </div>
-                             <h4 class="card-front__text">Teeth Whitening</h4>
-                        </div>
-                        <div class="treatment__card treatment__card--back card__back--gradient">
-                             <div class="card__back--box">
-                                 <p>Our  dental hygienists will remove plaque and enamel for a brighter smile</p>
-                                 <a href="#popup" class="card__back--button hvr-outline-out">LEARN MORE</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="box treatment__box">
+          <div class="treatment">
+            <div class="treatment__card treatment__card--front">
+              <div class="card__photo card__photo--2">
+                &nbsp;
+              </div>
+              <h4 class="card-front__text">Tooth Extraction</h4>
             </div>
-
-            <div class="row">
-                <div class="treatment__learn">
-                    <a href="#">View full list of treatments &rarr;</a>
-                </div>
+            <div class="treatment__card treatment__card--back card__back--gradient">
+              <div class="card__back--box">
+                <p>
+                  We can extract any teeth that are too damaged or loose to be saved
+                </p>
+                <a href="#popup" class="card__back--button hvr-outline-out">
+                  LEARN MORE
+                </a>
+              </div>
             </div>
-        </section>
-
-        <section class="popup" id="popup">
-            <div class="popup__box">
-                <div class="popup__left-column">   
-                    <h2> Got dental problems?</h2>
-                    <h3>We can put a smile on your face!</h3>
-                    <p class="popup__paragraph">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aliquam laudantium, libero magnam dolorem excepturi nesciunt recusandae exercitationem voluptates repudiandae nam ducimus, fugit ab nisi distinctio possimus aspernatur vitae itaque et, nulla perspiciatis! Unde reprehenderit, alias eos rerum ipsum fuga adipisci, labore recusandae dolore eveniet voluptatibus obcaecati ad numquam inventore possimus iste voluptas earum velit, sed odit. Velit optio molestiae animi repudiandae voluptatum laudantium eaque iusto, minus nam corrupti consequatur ratione, deleniti dolore repellat eligendi suscipit aperiam perferendis eius vitae similique debitis exercitationem qui dignissimos?
-                    </p>
-                    <a href="#contact" class="hero__button hvr-pulse">Get in touch</a>                 
-                </div>
-                <div class="popup__right-column">
-                    <a href="#section-treatments" class="popup__exit">&times;</a>
-                </div>
+          </div>
+        </div>
+        <div class="box treatment__box">
+          <div class="treatment">
+            <div class="treatment__card treatment__card--front">
+              <div class="card__photo card__photo--3">
+                &nbsp;
+              </div>
+              <h4 class="card-front__text">Teeth Whitening</h4>
             </div>
-        </section>
-    
-        <section class="section-testimonials">
-            <div class="row">
-                <h2>See what our happy patients have to say</h2>
-                <div class="row slideshow__container">
-                    <div class="slideshow__slide">
-                        <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi consequuntur tempora praesentium unde ullam ea optio blanditiis placeat impedit! In debitis culpa, quia possimus deleniti, nostrum totam cumque aut quidem delectus dolores distinctio.</blockquote>
-                        <cite class="section-testimonials__person"><img src="./styles/images/user1.jpg" alt="30 year old white man smiling"> -Rory Sinnott</cite>
-                    </div>
-                    <div class="slideshow__slide">
-                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo placeat ipsum, voluptatem nihil, blanditiis alias nemo sed error consectetur accusamus laudantium nisi nostrum totam. Sapiente exercitationem deleniti vero facere harum sint ducimus natus minima!</blockquote>
-                        <cite class="section-testimonials__person"><img src="./styles/images/user2.jpg" alt="30 year old white woman smiling"> -Mary Doyle</cite>
-                    </div>
-                    <div class="slideshow__slide">
-                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptas? Amet, iusto voluptatum? Minus maiores obcaecati numquam voluptatum laborum quidem culpa commodi quam omnis veritatis, excepturi illum hic distinctio. Facilis quae delectus alias!</blockquote>
-                        <cite class="section-testimonials__person"><img src="./styles/images/user3.jpg" alt="25 year old white man smiling"> -Philip Murphy</cite>
-                    </div>
-                    <div class="row slideshow__controls">
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <div class="dot-container">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                      
-                  
-                </div>    
+            <div class="treatment__card treatment__card--back card__back--gradient">
+              <div class="card__back--box">
+                <p>
+                  Our dental hygienists will remove plaque and enamel for a brighter smile
+                </p>
+                <a href="#popup" class="card__back--button hvr-outline-out">
+                  LEARN MORE
+                </a>
+              </div>
             </div>
-        </section>
-        
+          </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="treatment__learn">
+          <a href="#">View full list of treatments &rarr;</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="popup" id="popup">
+      <div class="popup__box">
+        <div class="popup__left-column">
+          <h2>Got dental problems?</h2>
+          <h3>We can put a smile on your face!</h3>
+          <p class="popup__paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aliquam laudantium,
+            libero magnam dolorem excepturi nesciunt recusandae exercitationem voluptates
+            repudiandae nam ducimus, fugit ab nisi distinctio possimus aspernatur vitae itaque et,
+            nulla perspiciatis! Unde reprehenderit, alias eos rerum ipsum fuga adipisci, labore
+            recusandae dolore eveniet voluptatibus obcaecati ad numquam inventore possimus iste
+            voluptas earum velit, sed odit. Velit optio molestiae animi repudiandae voluptatum
+            laudantium eaque iusto, minus nam corrupti consequatur ratione, deleniti dolore repellat
+            eligendi suscipit aperiam perferendis eius vitae similique debitis exercitationem qui
+            dignissimos?
+          </p>
+          <a href="#contact" class="hero__button hvr-pulse">Get in touch</a>
+        </div>
+        <div class="popup__right-column">
+          <a href="#section-treatments" class="popup__exit">&times;</a>
+        </div>
+      </div>
+    </section>
 
-        <section class="form" id="contact">
-            <div class="row">
-                <h2>Get in touch, we are eager to help!</h2>
+    <section class="section-testimonials">
+      <div class="row">
+        <h2>See what our happy patients have to say</h2>
+        <div class="row slideshow__container">
+          <div class="slideshow__slide">
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi consequuntur tempora
+              praesentium unde ullam ea optio blanditiis placeat impedit! In debitis culpa, quia
+              possimus deleniti, nostrum totam cumque aut quidem delectus dolores distinctio.
+            </blockquote>
+            <cite class="section-testimonials__person">
+              <img src="./styles/images/user1.jpg" alt="30 year old white man smiling" />
+              -Rory Sinnott
+            </cite>
+          </div>
+          <div class="slideshow__slide">
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo placeat ipsum,
+              voluptatem nihil, blanditiis alias nemo sed error consectetur accusamus laudantium
+              nisi nostrum totam. Sapiente exercitationem deleniti vero facere harum sint ducimus
+              natus minima!
+            </blockquote>
+            <cite class="section-testimonials__person">
+              <img src="./styles/images/user2.jpg" alt="30 year old white woman smiling" />
+              -Mary Doyle
+            </cite>
+          </div>
+          <div class="slideshow__slide">
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptas? Amet,
+              iusto voluptatum? Minus maiores obcaecati numquam voluptatum laborum quidem culpa
+              commodi quam omnis veritatis, excepturi illum hic distinctio. Facilis quae delectus
+              alias!
+            </blockquote>
+            <cite class="section-testimonials__person">
+              <img src="./styles/images/user3.jpg" alt="25 year old white man smiling" />
+              -Philip Murphy
+            </cite>
+          </div>
+          <div class="row slideshow__controls">
+            <a class="prev">&#10094;</a>
+            <div class="dot-container">
+              <span class="dot slide--1"></span>
+              <span class="dot slide--2"></span>
+              <span class="dot slide--3"></span>
             </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form"> 
-                    <label for="name">Name*</label>
-                    <div class="js-input">
-                        <input type="text" name="name" id="name" placeholder="Your name">
-                        <p class="error-message">Error</p>
-                    </div>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <label for="email">Email*</label>
-                    <div class="js-input">
-                        <input type="email" name="email" id="email" placeholder="Your email">
-                        <p class="error-message">Error</p>
-                    </div>
+    <section class="form" id="contact">
+      <div class="row">
+        <h2>Get in touch, we are eager to help!</h2>
+      </div>
+      <div class="row">
+        <form method="post" action="#" class="contact-form">
+          <label for="name">Name*</label>
+          <div class="js-input">
+            <input type="text" name="name" id="name" placeholder="Your name" />
+            <p class="error-message">Error</p>
+          </div>
 
-                    <label for="which-clinic">Your closest clinic?</label>
-                    <select name="which-clinic" id="which-clinic">
-                        <option value="rathmines" selected>Rathmines</option>
-                        <option value="swords">Swords</option>
-                        <option value="tallaght">Tallaght</option>
-                        <option value="blackrock">Blackrock</option>
-                    </select>
+          <label for="email">Email*</label>
+          <div class="js-input">
+            <input type="email" name="email" id="email" placeholder="Your email" />
+            <p class="error-message">Error</p>
+          </div>
 
-                    <label for="date">Appointment Date</label>
-                    <input type="date" name="date" id="date">
+          <label for="which-clinic">Your closest clinic?</label>
+          <select name="which-clinic" id="which-clinic">
+            <option value="rathmines" selected>Rathmines</option>
+            <option value="swords">Swords</option>
+            <option value="tallaght">Tallaght</option>
+            <option value="blackrock">Blackrock</option>
+          </select>
 
-                    <label>How can we help you?</label>
-                    <textarea name="message" placeholder="Your message"></textarea>
-                    
-                    <label class="nbsp">&nbsp;</label>
-                    <div>
-                        <input type="checkbox" name="newsletter" id="newsletter" checked> 
-                        <span class="contact-form__newsletter">  I would like to receive special offers</span>    
-                    </div>
+          <label for="date">Appointment Date</label>
+          <input type="date" name="date" id="date" />
 
-                    <label class="nbsp">&nbsp;</label>
-                    <input type="submit" value="Send message" class="submit hvr-pulse">
-                </form>
-            </div>    
-        </section>
+          <label>How can we help you?</label>
+          <textarea name="message" placeholder="Your message"></textarea>
 
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li class="footer__link"><a href="#">Privacy Policy</a></li>
-                        <li class="footer__link"><a href="#">Terms and Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li class="footer__link">
-                            <a href="https://www.facebook.com/">
-                                <svg class="social-links__facebook footer__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-facebook2"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__link">
-                            <a href="https://twitter.com/?lang=en">
-                                <svg class="social-links__twitter footer__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__link">
-                            <a href="https://www.instagram.com/">
-                                <svg class="social-links__instagram footer__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__link">
-                            <a href="https://ie.linkedin.com/">
-                                <svg class="social-links__linkedin footer__icon">
-                                    <use href="./styles/icons/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>                
-                </div>
-            </div>
-            <div class="row">
-                <p class="footer__para">Copyright &copy; 2020 by Dublin Dental Practice. All rights reserved.</p>
-            </div>
+          <label class="nbsp">&nbsp;</label>
+          <div>
+            <input type="checkbox" name="newsletter" id="newsletter" checked />
+            <span class="contact-form__newsletter">
+              I would like to receive special offers
+            </span>
+          </div>
 
-        </footer>
-                  
+          <label class="nbsp">&nbsp;</label>
+          <input type="submit" value="Send message" class="submit hvr-pulse" />
+        </form>
+      </div>
+    </section>
 
-        <script src="js/main.js"></script>  
-        
-    </body>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li class="footer__link"><a href="#">Privacy Policy</a></li>
+            <li class="footer__link"><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li class="footer__link">
+              <a href="https://www.facebook.com/">
+                <svg class="social-links__facebook footer__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="https://twitter.com/?lang=en">
+                <svg class="social-links__twitter footer__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="https://www.instagram.com/">
+                <svg class="social-links__instagram footer__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="https://ie.linkedin.com/">
+                <svg class="social-links__linkedin footer__icon">
+                  <use href="./styles/icons/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p class="footer__para">
+          Copyright &copy; 2020 by Dublin Dental Practice. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
+    <script src="js/main.js"></script>
+  </body>
 </html>

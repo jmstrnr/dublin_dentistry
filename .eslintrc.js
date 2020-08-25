@@ -17,6 +17,13 @@ module.exports = {
     // Likely will always be unneeded and turned off
     'no-plusplus': 'off',
     'no-use-before-define': 'off',
+    'no-confusing-arrow': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'comma-dangle': 'off',
+    'function-paren-newline': 'off',
+    'linebreak-style': 'off',
+    'spaced-comment': 'off',
+    'operator-linebreak': 'off',
 
     // Style rules disabled so wont conflict with Prettier
   },

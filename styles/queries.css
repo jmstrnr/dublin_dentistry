@@ -146,10 +146,6 @@
   .app__download {
     text-align: center;
   }
-  .app__button img {
-    height: 6rem;
-    margin: 2rem 1rem;
-  }
   .locations__flex {
     flex-direction: column;
   }
@@ -254,9 +250,6 @@
   .price-info__li {
     text-align: center;
   }
-  .app__button img {
-    height: 5.5rem;
-  }
   .treatment {
     height: auto;
   }
@@ -312,9 +305,6 @@
 @media only screen and (max-width: 400px) {
   html {
     font-size: 40%;
-  }
-  .app__button img {
-    height: 5rem;
   }
   .contact-form__newsletter {
     font-size: 80%;
