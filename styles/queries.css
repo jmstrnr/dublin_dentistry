@@ -14,7 +14,6 @@
   .navigation__link:link {
     font-size: 2rem;
     padding: 1rem 0;
-    background-size: 240%;
   }
   .hero__text-box {
     width: 100%;
@@ -63,7 +62,6 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 50%;
-    float: none;
     background-color: transparent;
     border-bottom: none;
   }
@@ -78,7 +76,6 @@
       transparent 50%,
       rgba(0, 155, 73, 1) 50%
     );
-    background-size: 240%;
   }
   .navigation__link:hover,
   .navigation__link:active {
@@ -102,6 +99,7 @@
   }
   .price-box {
     display: flex;
+    margin-bottom: 3rem;
   }
   .price-info__li {
     text-align: left;
@@ -113,6 +111,10 @@
   }
   .consultation {
     align-self: center;
+  }
+  .faq {
+    width: 90%;
+    margin: 2rem auto;
   }
   .app-box {
     margin-top: 2.5rem;
@@ -199,20 +201,22 @@
   .nbsp {
     display: none;
   }
+  .contact-form__checkbox {
+    grid-column: 1 / 3;
+    text-align: center;
+  }
   .contact-form__newsletter {
     font-size: 100%;
   }
   input.submit {
     font-size: 120%;
-    margin: 0 20%;
-    width: 60%;
+    grid-column: 1 / 3;
+    margin: 0 15%;
   }
   .footer-nav {
-    float: none;
     text-align: center;
   }
   .social-links {
-    float: none;
     text-align: center;
   }
 }
@@ -245,14 +249,17 @@
   .price-box {
     flex-direction: column;
     text-align: center;
-    margin: 0 0 2rem 0;
+    margin: 0 auto 2rem auto;
   }
   .price-info__li {
     text-align: center;
   }
   .treatment {
     height: auto;
+    margin: 1rem 5%;
+    width: 90%;
   }
+
   .treatment__card {
     height: auto;
     position: relative;
@@ -289,6 +296,9 @@
   .treatment__card .card__back--box .card__back--button {
     margin: 2.5rem;
   }
+  .contact-form {
+    width: 90%;
+  }
   input.submit {
     margin: 0 10%;
     width: 80%;
@@ -296,8 +306,14 @@
   .contact-form__newsletter {
     font-size: 90%;
   }
+  .footer__flex {
+    flex-direction: column;
+  }
+  .footer-nav {
+    margin-bottom: 4rem;
+  }
   .footer__para {
-    font-size: 130%;
+    font-size: 140%;
   }
 }
 

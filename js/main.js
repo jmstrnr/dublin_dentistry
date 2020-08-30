@@ -1,3 +1,14 @@
+/*---Nav Toggle Logic---*/
+
+const navCheckbox = document.querySelector('#menu-toggle');
+const navLinks = document.querySelectorAll('.navigation__link');
+
+for (const link of navLinks) {
+  link.addEventListener('click', () => {
+    navCheckbox.checked = false;
+  });
+}
+
 /* ---App Popup Logic---*/
 
 const close = document.querySelector('.js-close');
@@ -80,6 +91,7 @@ const next = document.querySelector('.next');
 
 const prevSlide = function () {
   plusSlides(-1);
+  clearInterval(autoplaySlides);
 };
 
 const nextSlide = function () {
@@ -91,11 +103,7 @@ prev.addEventListener('click', prevSlide);
 next.addEventListener('click', nextSlide);
 
 // Autoplay slides on interval
-const autoplaySlides = () => {
-  setInterval(nextSlide, 5000);
-};
-
-autoplaySlides();
+const autoplaySlides = window.setInterval(nextSlide, 7000);
 
 // Event listeners for individual dots
 const slide1 = document.querySelector('.slide--1');

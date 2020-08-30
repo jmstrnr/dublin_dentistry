@@ -24,6 +24,7 @@ module.exports = {
     'linebreak-style': 'off',
     'spaced-comment': 'off',
     'operator-linebreak': 'off',
+    'no-restricted-syntax': 'off',
 
     // Style rules disabled so wont conflict with Prettier
   },
