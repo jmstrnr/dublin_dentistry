@@ -2,3 +2,5 @@ node_modules/
 webpack.config.js
 eslintrc.js
 .vscode/
+.DS_Store
+dist

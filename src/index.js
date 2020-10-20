@@ -1,3 +1,15 @@
+/*---Imports---*/
+import './styles/modern-normalize.css';
+import './styles/style.css';
+import './styles/queries.css';
+
+// To import the entire images directory
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context('./styles/images/', false, /\.(png|jpe?g|svg|ico)$/));
+
 /*---Nav Toggle Logic---*/
 
 const navCheckbox = document.querySelector('#menu-toggle');
